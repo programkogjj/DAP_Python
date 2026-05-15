@@ -1,9 +1,7 @@
 import streamlit as st
 
-# Úvodní text pro studenty
-st.sidebar.markdown("## 📚 Navigace kurzu")
-st.sidebar.info("Vyberte si lekci v horním menu.")
 
+# Úvodní text pro studenty
 st.markdown("""
 # Vítejte v kurzu Programování s Pythonem a Sonic Pi 🎹
 
@@ -18,7 +16,21 @@ Vítejte v kurzu programování a algoritmizace, který je navržen tak, aby vá
 * **Hudební informatika:** Zjistíte, jak se pomocí kódu tvoří tóny, akordy a rytmické sekvence.
 
 ### 🛠️ Jak s aplikací pracovat?
+""")
+st.markdown("##### Manuál k zprovoznění prostředí programování (PDF)")
 
+try:
+    with open("manual_exp.pdf", "rb") as file:
+        st.download_button(
+            label="Stáhnout",  # Text přímo na tlačítku
+            data=file,
+            file_name="manual_pro_zprovozneni.pdf",
+            mime="application/pdf"
+        )
+except FileNotFoundError:
+    st.error("Soubor manual_exp.pdf nebyl nalezen.")
+
+st.markdown("""
 1. **Mějte spuštěné Sonic Pi:** Aby vše fungovalo, musí vám na pozadí běžet program Sonic Pi.
 2. **Procházejte lekce:** Každá kapitola obsahuje teoretický úvod a interaktivní cvičení.
 3. **Tvořte a poslouchejte:** U každého cvičení najdete tlačítko **"Play"**, k ověření správnosti vašeho řešení.
