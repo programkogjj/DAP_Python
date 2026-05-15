@@ -1,10 +1,10 @@
 # Výuka programování v Pythonu pomocí Sonic Pi
 
-Tento repozitář obsahuje materiály, zdrojové kódy a interaktivní aplikaci pro vzdělávací projekt zaměřený na výuku programování v jazyce Python skrze algoritmickou kompozici hudby.
+Tento repozitář obsahuje materiály, zdrojové kódy a interaktivní aplikaci pro vzdělávací projekt zaměřený na výuku programování v jazyce Python skrze algoritmickou kompozici hudby
 
 ## 🎯 Zaměření projektu
 
-Práce se zabývá využitím hudebního programovacího prostředí **Sonic Pi** a knihovny **psonic** jako motivačního nástroje pro výuku programování. Projekt porovnává efektivitu výuky v čistém Pythonu oproti interaktivní hudební tvorbě (experimentální vs. kontrolní skupina).
+Práce se zabývá využitím hudebního programovacího prostředí **Sonic Pi** a knihoven **psonic** a **python-osc** jako motivačního nástroje pro výuku programování. Projekt porovnává efektivitu výuky v čistém Pythonu oproti interaktivní hudební tvorbě (experimentální vs. kontrolní skupina).
 Webová aplikace se zpětnou vazbou ke cvičením je dostupná na: https://dappython-forstudents.streamlit.app/
 
 ## 📊 Struktura projektu a úložiště
