@@ -2,7 +2,7 @@ import streamlit as st
 import os
 
 # Definujeme cestu ke složce se zvuky
-SOUNDS_DIR = "sounds"
+SOUNDS_DIR = "Sounds"
 
 def play_sound(filename):
     path = os.path.join(SOUNDS_DIR, filename)
